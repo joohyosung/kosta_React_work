@@ -3,11 +3,11 @@ import React from "react";
 function Nav() {
   return (
     <div>
-      <span>1. 하와이</span>
-      <br />
-      <span>2. 스페인</span>
-      <br />
-      <span>3. 베트남</span>
+      <ol>
+        <li>하와이</li>
+        <li>스페인</li>
+        <li>베트남</li>
+      </ol>
     </div>
   );
 }

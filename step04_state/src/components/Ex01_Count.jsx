@@ -22,7 +22,9 @@ function Ex01_Count() {
   // 증가하는 함수
   const plusFun = () => {
     setNo(no + 1);
+    console.log("no=" + no);
     i++;
+    console.log(i);
   };
 
   return (
@@ -33,6 +35,22 @@ function Ex01_Count() {
         no={no} / i={i}
       </span>
       <button onClick={plusFun}>더하기</button>
+      <button
+        onClick={() => {
+          /* 
+          setNo(no + 1);
+          setNo(no + 1);
+          setNo(no + 1);
+          setNo(no + 1);
+          */
+          setNo((pre) => pre + 1);
+          setNo((pre) => pre + 1);
+          setNo((pre) => pre + 1);
+          setNo((pre) => pre + 1);
+        }}
+      >
+        한번에 여러번 더하기
+      </button>
     </div>
   );
 }
